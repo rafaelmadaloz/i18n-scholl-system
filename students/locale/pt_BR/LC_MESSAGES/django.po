@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-16 20:34-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: models.py:11
+msgid "Male"
+msgstr "Masculino"
+
+#: models.py:12
+msgid "Female"
+msgstr "Feminino"
+
+#: models.py:13
+msgid "Other"
+msgstr "Outro"
+
+#: models.py:16 views.py:27
+msgid "Student Name"
+msgstr "Nome do Aluno"
+
+#: models.py:17
+msgid "Student Roll"
+msgstr "Identificação do Aluno"
+
+#: models.py:18
+msgid "Student Email"
+msgstr "E-mail do Aluno"
+
+#: models.py:19
+msgid "Student Gender"
+msgstr "Gênero do Aluno"
+
+#: models.py:20
+msgid "Student Class"
+msgstr "Turma do Aluno"
+
+#: models.py:21
+msgid "Student Date of Birth"
+msgstr "Data de Nascimento do Aluno"
+
+#: models.py:22
+msgid "Student Registration"
+msgstr "Novo Aluno"
+
+#: models.py:23
+msgid "Student Payment"
+msgstr "Pagamento do Aluno"
+
+#: templates/students/student_delete.html:25
+#, python-format
+msgid "Are you sure you want to delete student \"%(object)s\" info ?"
+msgstr "Tem certeza que deseja excluir o aluno \"%(object)s\"?"
+
+#: templates/students/student_list.html:28
+msgid "Edit Record"
+msgstr "Editar Registro"
+
+#: templates/students/student_list.html:30
+msgid "Delete Record"
+msgstr "Excluir Registro"
+
+#: views.py:19
+msgid "Student Creation"
+msgstr "Registro do Aluno"
+
+#: views.py:20 views.py:32 views.py:46 views.py:58
+msgid "Students"
+msgstr "Alunos"
+
+#: views.py:21
+msgid "Create Student"
+msgstr "Novo Aluno"
+
+#: views.py:27
+msgid "Roll No"
+msgstr "Número de Identificação"
+
+#: views.py:27
+msgid "Class"
+msgstr "Turma"
+
+#: views.py:27
+msgid "Reg Date"
+msgstr "Data de Registro"
+
+#: views.py:27
+msgid "Date of birth"
+msgstr "Data de Nascimento"
+
+#: views.py:27
+msgid "Payment"
+msgstr "Pagamento"
+
+#: views.py:31
+msgid "Manage Students"
+msgstr "Gerenciar Alunos"
+
+#: views.py:33
+msgid "View Students Info"
+msgstr "Ver Informações de Alunos"
+
+#: views.py:45
+msgid "Update Student Info"
+msgstr "Atualizar Informações de Alunos"
+
+#: views.py:47
+msgid "Update Student info"
+msgstr "Atualizar Informações de Alunos"
+
+#: views.py:57
+msgid "Student Delete Confirmation"
+msgstr "Confirmar Exclusão do Aluno"
+
+#: views.py:59
+msgid "Delete Student"
+msgstr "Excluir Aluno"

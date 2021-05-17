@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-16 20:34-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: templates/dashboard.html:5
+msgid "Dashboard"
+msgstr "Painel"
+
+#: templates/dashboard.html:15
+msgid "Regd Students"
+msgstr "Alunos Cadastrados"
+
+#: templates/dashboard.html:25
+msgid "Subjects Listed"
+msgstr "Disciplinas Cadastradas"
+
+#: templates/dashboard.html:35
+msgid "Total classes listed"
+msgstr "Turmas Cadastradas"
+
+#: templates/dashboard.html:46
+msgid "Results Declared"
+msgstr "Resultados Cadastrados"
+
+#: templates/find_result.html:12
+msgid "School Result Management System"
+msgstr "Sistema de Gerenciamento Escolar"
+
+#: templates/find_result.html:21
+msgid "Enter your Roll Id"
+msgstr "Digiteu seu número de identificação"
+
+#: templates/find_result.html:22
+msgid "Enter Your Roll Id"
+msgstr "Digiteu seu número de identificação"
+
+#: templates/find_result.html:26
+msgid "Class"
+msgstr "Turma"
+
+#: templates/find_result.html:28
+msgid "Select Class"
+msgstr "Selecionar Turma"
+
+#: templates/find_result.html:41
+msgid "Search"
+msgstr "Procurar"
+
+#: templates/find_result.html:48
+msgid "Back to Home"
+msgstr "Voltar ao Ínicio"
+
+#: templates/index.html:8 templates/index.html:26 templates/index.html:67
+#: templates/result.html:8
+msgid "Student Result Management System"
+msgstr "Sistema de Gerenciamento Escolar"
+
+#: templates/index.html:20
+msgid "For Students"
+msgstr "Para Alunos"
+
+#: templates/index.html:31
+msgid "Search your result"
+msgstr "Porcurar seu resultado"
+
+#: templates/index.html:33
+msgid "click here"
+msgstr "clique aqui"
+
+#: templates/index.html:75
+msgid "Name"
+msgstr "Nome"
+
+#: templates/index.html:78
+msgid "UserName"
+msgstr "Usuário"
+
+#: templates/index.html:82 templates/index.html:85
+msgid "Password"
+msgstr "Senha"
+
+#: templates/index.html:92
+msgid "Sign in"
+msgstr "Entrar"
+
+#: templates/result.html:10
+msgid "Save as PDF"
+msgstr "Salvar como PDF"
+
+#: templates/result.html:13
+msgid "Student Name"
+msgstr "Nome do Aluno"
+
+#: templates/result.html:16
+msgid "Student Class"
+msgstr "Turma do Aluno"
+
+#: templates/result.html:19
+msgid "Student Roll"
+msgstr "Número de Identificação do Aluno"
+
+#: templates/result.html:21
+msgid "Mark Sheet"
+msgstr "Notas"
+
+#: templates/result.html:27
+msgid "Subject Name"
+msgstr "Nome da Disciplina"
+
+#: templates/result.html:28
+msgid "Mark"
+msgstr "Nota"
+
+#: templates/result.html:49
+msgid "Back To Home"
+msgstr "Voltar ao Ínicio"
+
+#: views.py:35
+msgid "Invalid User Name and Password"
+msgstr "Usuário ou Senha Inválidas"
+
+#: views.py:93 views.py:94
+msgid "Admin Change Password"
+msgstr "Alterar Senha do Administrador"

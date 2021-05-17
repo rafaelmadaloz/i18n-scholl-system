@@ -4,6 +4,7 @@ from django.views.generic import (
 )
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.utils.translation import gettext as _
 from results.models import DeclareResult
 from results.forms import DeclareResultForm
 from subjects.models import SubjectCombination
@@ -29,7 +30,7 @@ def validate_data(request):
         data['subjects'] = sir_subjects
         return JsonResponse(data)
     subjects = None
-    data['result'] = 'you made a request with empty data'
+    data['result'] = _('you made a request with empty data')
     return HttpResponse(json.dumps(data), content_type="application/json")
 
 def declare_result_view(request):
@@ -47,9 +48,9 @@ def declare_result_view(request):
         DeclareResult.objects.create(select_class=clas, select_student=student, marks=data)
     else:
         form = DeclareResultForm()
-        context['main_page_title'] = 'Declare Students Result'
-        context['panel_name'] = 'Results'
-        context['panel_title'] = 'Declare Result'
+        context['main_page_title'] = _('Declare Students Result')
+        context['panel_name'] = _('Results')
+        context['panel_title'] = _('Declare Result')
         context['form'] = form
     return render(request, "results/declareresult_form.html", context)
 
@@ -68,9 +69,9 @@ def result_update_view(request, pk):
     result = get_object_or_404(DeclareResult, pk=pk)
     form = DeclareResultForm(instance=result)
     context = {}
-    context['main_page_title'] = 'Update Students Result'
-    context['panel_name'] = 'Results'
-    context['panel_title'] = 'Update Result'
+    context['main_page_title'] = _('Update Students Result')
+    context['panel_name'] = _('Results')
+    context['panel_title'] = _('Update Result')
     context['form'] = form
     context['pk'] = pk
     if request.method == "POST":
@@ -104,13 +105,13 @@ class DeclareResultListView(LoginRequiredMixin, ListView):
     model = DeclareResult
 
     field_list = [
-        'Student Name', 'Roll No', 'Class', 'Reg Date', 'View Result'
+        _('Student Name'), _('Roll No'), _('Class'), _('Reg Date'), _('View Result')
     ]
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['main_page_title'] = 'Manage Results'
-        context['panel_name']   =   'Results'
-        context['panel_title']  =   'View Results Info'
+        context['main_page_title'] = _('Manage Results')
+        context['panel_name']   =   _('Results')
+        context['panel_title']  =   _('View Results Info')
         context['field_list']   =   self.field_list
         return context
     

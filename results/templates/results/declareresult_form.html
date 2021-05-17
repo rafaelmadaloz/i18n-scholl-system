@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 {% block top_js %}
     
 {% endblock top_js %}
@@ -32,12 +33,12 @@
                 {% endfor %}
                 <div class="ajax_load">
                     <div class="form-group">
-                        <label for="success" class="col-sm-2 control-label">Subjects:</label>
+                        <label for="success" class="col-sm-2 control-label">{% trans "Subjects" %}:</label>
                         <div class="col-sm-10" id="add_field">
                             
                         </div>
                     </div>
-                    <input type="submit" value="Save" name="save" class="btn btn-primary">
+                    <input type="submit" value="{% trans 'Save' %}" name="save" class="btn btn-primary">
                 </div>
             </form>
         </div>
@@ -70,7 +71,7 @@
                     for (let i = 0; i < myObj.length; i++) {
                         subjectName = myObj[i].fields.subject_name
 
-                        code = '<div class="form-group"><div class="col-sm-2"><label for="" class="control-label">'+ subjectName +'</label></div ><div class="col-sm-6"><input type="hidden" name="subject_'+i+'" value="' + subjectName +'"><input type="number" name="subject_' + i +'_mark" class="form-control" placeholder="Enter Mark For ' + subjectName +'"></div></div>';
+                        code = '<div class="form-group"><div class="col-sm-2"><label for="" class="control-label">'+ subjectName +'</label></div ><div class="col-sm-6"><input type="hidden" name="subject_'+i+'" value="' + subjectName +'"><input type="number" name="subject_' + i +'_mark" class="form-control" placeholder="{% trans "Enter Mark For" %} ' + subjectName +'"></div></div>';
 
                         $('#add_field').append(code)                    
                     }

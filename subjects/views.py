@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import CreateView, ListView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.utils.translation import gettext as _
 from .models import Subject, SubjectCombination
 from .forms import SubjectForm, SubjectCombinationForm
 from django.urls import reverse_lazy
@@ -14,21 +15,21 @@ class SubjectCreateView(LoginRequiredMixin, CreateView):
     
     def get_context_data(self, **kwargs):
         context = super(SubjectCreateView, self).get_context_data(**kwargs)
-        context['main_page_title'] = 'Subject Creation'
-        context['panel_name'] = 'Subjects'
-        context['panel_title'] = 'Add Subject'
+        context['main_page_title'] = _('Subject Creation')
+        context['panel_name'] = _('Subjects')
+        context['panel_title'] = _('Add Subject')
         return context
 
 class SubjectListView(LoginRequiredMixin, ListView):
     model = Subject
     field_list = [
-        'Subject Name', 'Subject Code', 'Creation Date', 'Last Updated'
+        _('Subject Name'), _('Subject Code'), _('Creation Date'), _('Last Updated')
     ]
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['main_page_title'] = 'Manage Subjects'
-        context['panel_name']   =   'Subjects'
-        context['panel_title']  =   'View Subjects Info'
+        context['main_page_title'] = _('Manage Subjects')
+        context['panel_name']   =   _('Subjects')
+        context['panel_title']  =   _('View Subjects Info')
         context['field_list']   =   self.field_list
         return context
 
@@ -46,9 +47,9 @@ class SubjectDeleteView(LoginRequiredMixin, DeleteView):
     
     def get_context_data(self, **kwargs):
         context = super(SubjectDeleteView, self).get_context_data(**kwargs)
-        context['main_page_title'] = 'Subject Delete Confirmation'
-        context['panel_name'] = 'Subjects'
-        context['panel_title'] = 'Delete Subject'
+        context['main_page_title'] = _('Subject Delete Confirmation')
+        context['panel_name'] = _('Subjects')
+        context['panel_title'] = _('Delete Subject')
         return context
     
 class SubjectCombinationCreateView(LoginRequiredMixin, CreateView):
@@ -58,21 +59,21 @@ class SubjectCombinationCreateView(LoginRequiredMixin, CreateView):
 
     def get_context_data(self, **kwargs):
         context = super(SubjectCombinationCreateView, self).get_context_data(**kwargs)
-        context['main_page_title'] = 'SubjectCombination Creation'
-        context['panel_name'] = 'SubjectConbinations'
-        context['panel_title'] = 'Create SubjectConbination'
+        context['main_page_title'] = _('SubjectCombination Creation')
+        context['panel_name'] = _('SubjectConbinations')
+        context['panel_title'] = _('Create SubjectConbination')
         return context
 
 class SubjectCombinationListView(LoginRequiredMixin, ListView):
     model = SubjectCombination
     field_list = [
-        'Class', 'Section', 'Subject'
+        _('Class'), _('Section'), _('Subject')
     ]
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['main_page_title'] = 'Manage SubjectCombinations'
-        context['panel_name']   =   'SubjectCombinations'
-        context['panel_title']  =   'View SubjectCombinations Info'
+        context['main_page_title'] = _('Manage SubjectCombinations')
+        context['panel_name']   =   _('SubjectCombinations')
+        context['panel_title']  =   _('View SubjectCombinations Info')
         context['field_list']   =   self.field_list
         return context
 
@@ -89,7 +90,7 @@ class SubjectCombinationDeleteView(LoginRequiredMixin, DeleteView):
 
     def get_context_data(self, **kwargs):
         context = super(SubjectCombinationDeleteView, self).get_context_data(**kwargs)
-        context['main_page_title'] = 'SubjectCombination Delete Confirmation'
-        context['panel_name'] = 'SubjectCombinations'
-        context['panel_title'] = 'Delete SubjectCombination'
+        context['main_page_title'] = _('SubjectCombination Delete Confirmation')
+        context['panel_name'] = _('SubjectCombinations')
+        context['panel_title'] = _('Delete SubjectCombination')
         return context

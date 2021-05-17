@@ -1,5 +1,6 @@
 from django.forms import ModelForm
 from django import forms
+from django.utils.translation import gettext as _
 from .models import DeclareResult
 
 class DeclareResultForm(ModelForm):
@@ -11,6 +12,6 @@ class DeclareResultForm(ModelForm):
             'select_student':  forms.Select(attrs={'class': 'form-control'}),
         }
         labels = {
-            'select_class' : 'Class',
-            'select_student' : 'Select Student',
+            'select_class' : _('Select Class'),
+            'select_student' : _('Select Student'),
         }

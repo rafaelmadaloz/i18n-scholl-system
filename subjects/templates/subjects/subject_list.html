@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load i18n %}
 {% block main_page_title %}
 {{ main_page_title }}
 {% endblock main_page_title %}
@@ -23,9 +23,9 @@
     <td>{{ object.subject_creation_date }}</td>
     <td>{{ object.subject_update_date }}</td>
     <td>
-        <a href="{% url 'subjects:update_subject' object.id %}" class="btn btn-primary"><i class="fa fa-edit" title="Edit Record"></i>
+        <a href="{% url 'subjects:update_subject' object.id %}" class="btn btn-primary"><i class="fa fa-edit" title="{% trans 'Edit Record' %}"></i>
         </a>
-        <a href="{% url 'subjects:delete_subject' object.id %}" class="btn btn-danger"><i class="fa fa-trash" title="Delete Record"></i>
+        <a href="{% url 'subjects:delete_subject' object.id %}" class="btn btn-danger"><i class="fa fa-trash" title="{% trans 'Delete Record' %}"></i>
         </a>
 
     </td>

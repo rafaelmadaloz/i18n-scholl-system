@@ -9,6 +9,7 @@ from django.contrib.auth.views import PasswordChangeView
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth import authenticate, login
 from django.views.generic import TemplateView, View
+from django.utils.translation import gettext as _
 from django.contrib.auth.models import User
 from results.models import DeclareResult
 from django.http import JsonResponse
@@ -26,14 +27,12 @@ def index(request):
     if request.method == "POST":
         username = request.POST['username']
         password = request.POST['password']
-        print("\nUser Name = ",username)
-        print("Password = ",password)
         user = authenticate(username=username, password=password)
         if user is not None:
             login(request, user)
             return redirect('dashboard:dashboard')
         else:
-            context = {'message':'Invalid User Name and Password'}
+            context = {'message':_('Invalid User Name and Password')}
             return render(request, 'index.html', context)
     return render(request, 'index.html', {'name': 'Riajul Kashem', 'pass': 'login@srms'})
 
@@ -91,8 +90,8 @@ class PasswordChangeView(LoginRequiredMixin, PasswordChangeView):
     
     def get_context_data(self, **kwargs):
         context = super(PasswordChangeView, self).get_context_data(**kwargs)
-        context['main_page_title'] = 'Admin Change Password'
-        context['panel_title'] = 'Admin Change Password'
+        context['main_page_title'] = _('Admin Change Password')
+        context['panel_title'] = _('Admin Change Password')
         return context
 
 

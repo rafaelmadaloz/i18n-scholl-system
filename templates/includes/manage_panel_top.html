@@ -1,3 +1,4 @@
+{% load i18n %}
 <div class="col-md-12">
     <div class="panel">
         <div class="panel-heading">
@@ -12,17 +13,17 @@
             <div id="example_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="dataTables_length" id="example_length"><label>Show <select name="example_length" aria-controls="example"
+                        <div class="dataTables_length" id="example_length"><label>{% trans "Show" %} <select name="example_length" aria-controls="example"
                                     class="form-control input-sm">
                                     <option value="10">10</option>
                                     <option value="25">25</option>
                                     <option value="50">50</option>
                                     <option value="100">100</option>
-                                </select> entries</label>
+                                </select> {% trans "entries" %}</label>
                         </div>
                     </div>
                     <div class="col-sm-6">
-                        <div id="example_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control input-sm"
+                        <div id="example_filter" class="dataTables_filter"><label>{% trans "Search" %}:<input type="search" class="form-control input-sm"
                                     placeholder="" aria-controls="example"></label></div>
                     </div>
                 </div>
@@ -41,7 +42,7 @@
                                     {% endfor %}
             
                                     <th class="sorting" tabindex="0" aria-controls="example" rowspan="1" colspan="1" aria-label="Action: activate to sort column ascending"
-                                        style="width: 86px;">Action</th>
+                                        style="width: 86px;">{% trans "Action" %}</th>
                                 </tr>
                             </thead>
                             <tfoot>
@@ -52,7 +53,7 @@
                                     <th rowspan="1" colspan="1">{{ field }}</th>
                                     {% endfor %}
             
-                                    <th rowspan="1" colspan="1">Action</th>
+                                    <th rowspan="1" colspan="1">{% trans "Action" %}</th>
                                 </tr>
                             </tfoot>
                             <tbody>

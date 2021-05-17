@@ -3,6 +3,7 @@ from django.views.generic import CreateView, ListView, UpdateView, DeleteView
 from .models import StudentClass
 from .forms import StudentClassForm
 from django.urls import reverse_lazy
+from django.utils.translation import gettext as _
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 # Create your views here.
@@ -15,23 +16,23 @@ class StudentClassCreateView(LoginRequiredMixin, CreateView):
     
     def get_context_data(self, **kwargs):
         context = super(StudentClassCreateView, self).get_context_data(**kwargs)
-        context['main_page_title'] = 'Add Student Class'
-        context['panel_name'] = 'Classes'
-        context['panel_title'] = 'Add Class'
+        context['main_page_title'] = _('Add Student Class')
+        context['panel_name'] = _('Classes')
+        context['panel_title'] = _('Add Class')
         return context
 
 class StudentClassListView(LoginRequiredMixin, ListView):
     model = StudentClass
 
     field_list = [
-        'Class Name', 'Class Name In Numeric', 'Section', 'Creation Date'
+        _('Class Name'), _('Class Name In Numeric'), _('Section'), _('Creation Date')
     ]
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['main_page_title'] = 'Manage Classes'
-        context['panel_name']   =   'Classes'
-        context['panel_title']  =   'View Classes Info'
+        context['main_page_title'] = _('Manage Classes')
+        context['panel_name']   =   _('Classes')
+        context['panel_title']  =   _('View Classes Info')
         context['field_list']   =   self.field_list
         return context
 
@@ -48,7 +49,7 @@ class StudentClassDeleteView(LoginRequiredMixin, DeleteView):
 
     def get_context_data(self, **kwargs):
         context = super(StudentClassDeleteView, self).get_context_data(**kwargs)
-        context['main_page_title'] = 'Class Delete Confirmation'
-        context['panel_name'] = 'Classes'
-        context['panel_title'] = 'Delete Class'
+        context['main_page_title'] = _('Class Delete Confirmation')
+        context['panel_name'] = _('Classes')
+        context['panel_title'] = _('Delete Class')
         return context

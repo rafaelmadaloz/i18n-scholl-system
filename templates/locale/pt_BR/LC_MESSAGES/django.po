@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-16 20:33-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: base.html:45
+msgid "Home"
+msgstr "Ínicio"
+
+#: includes/form.html:25
+msgid "Submit"
+msgstr "Salvar"
+
+#: includes/manage_panel_bottom.html:9
+msgid "Showing 1 to 1 of 1 entries"
+msgstr "Exibindo 1 de 1 entradas"
+
+#: includes/manage_panel_bottom.html:15
+msgid "Previous"
+msgstr "Anterior"
+
+#: includes/manage_panel_bottom.html:18
+msgid "Next"
+msgstr "Próximo"
+
+#: includes/manage_panel_top.html:16
+msgid "Show"
+msgstr "Exibir"
+
+#: includes/manage_panel_top.html:22
+msgid "entries"
+msgstr "entradas"
+
+#: includes/manage_panel_top.html:26
+msgid "Search"
+msgstr "Procurar"
+
+#: includes/manage_panel_top.html:45 includes/manage_panel_top.html:56
+msgid "Action"
+msgstr "Ação"
+
+#: snipets/header_static_files.html:9
+msgid "Admin Login"
+msgstr "Entrar como Administrador"
+
+#: snipets/nav.html:8
+msgid "Admin"
+msgstr "Administrador"
+
+#: snipets/nav.html:13
+msgid "Toggle navigation"
+msgstr "Alterar Navegação"
+
+#: snipets/nav.html:38
+msgid "Logout"
+msgstr "Sair"
+
+#: snipets/sidebar_nav.html:5
+msgid "Main Category"
+msgstr "Menu de Categorias"
+
+#: snipets/sidebar_nav.html:8
+msgid "Dashboard"
+msgstr "Painel"
+
+#: snipets/sidebar_nav.html:13
+msgid "Appearance"
+msgstr "Aparência"
+
+#: snipets/sidebar_nav.html:16
+msgid "Student Classes"
+msgstr "Turmas de Alunos"
+
+#: snipets/sidebar_nav.html:18
+msgid "Create Class"
+msgstr "Nova Turma"
+
+#: snipets/sidebar_nav.html:19
+msgid "Manage Classes"
+msgstr "Gerenciar Turmas"
+
+#: snipets/sidebar_nav.html:24
+msgid "Subjects"
+msgstr "Disciplinas"
+
+#: snipets/sidebar_nav.html:26
+msgid "Create Subject"
+msgstr "Nova Disciplina"
+
+#: snipets/sidebar_nav.html:27
+msgid "Manage Subjects"
+msgstr "Gerenciar Disciplinas"
+
+#: snipets/sidebar_nav.html:29
+msgid "Add Subject Combination"
+msgstr "Nova Combinação de Disciplinas"
+
+#: snipets/sidebar_nav.html:31
+msgid "Manage Subject Combination"
+msgstr "Gerenciar Combinação de Disciplinas"
+
+#: snipets/sidebar_nav.html:36
+msgid "Students"
+msgstr "Alunos"
+
+#: snipets/sidebar_nav.html:38
+msgid "Add Students"
+msgstr "Novo Aluno"
+
+#: snipets/sidebar_nav.html:39
+msgid "Manage Students"
+msgstr "Gerenciar Alunos"
+
+#: snipets/sidebar_nav.html:44
+msgid "Result"
+msgstr "Resultados"
+
+#: snipets/sidebar_nav.html:46
+msgid "Add Result"
+msgstr "Novo Resultado"
+
+#: snipets/sidebar_nav.html:47
+msgid "Manage Result"
+msgstr "Gerenciar Resultados"
+
+#: snipets/sidebar_nav.html:50
+msgid "Admin Change Password"
+msgstr "Alterar Senha do Administrador"

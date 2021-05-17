@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load l10n i18n money %}
 {% block main_page_title %}
 {{ main_page_title }}
 {% endblock main_page_title %}
@@ -23,10 +23,11 @@
     <td>{{ object.student_class }}</td>
     <td>{{ object.student_reg }}</td>
     <td>{{ object.student_date_of_birth }}</td>
+    <td>{{ object.student_payment_value|money }}</td>
     <td>
-        <a href="{% url 'students:student_update' object.id %}" class="btn btn-primary"><i class="fa fa-edit" title="Edit Record"></i>
+        <a href="{% url 'students:student_update' object.id %}" class="btn btn-primary"><i class="fa fa-edit" title="{% trans 'Edit Record' %}"></i>
         </a>
-        <a href="{% url 'students:student_delete' object.id %}" class="btn btn-danger"><i class="fa fa-trash" title="Delete Record"></i>
+        <a href="{% url 'students:student_delete' object.id %}" class="btn btn-danger"><i class="fa fa-trash" title="{% trans 'Delete Record' %}"></i>
         </a>
 
     </td>

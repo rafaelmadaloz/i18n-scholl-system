@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 
 {% block main_page_title %}
@@ -22,7 +23,7 @@
         </div>
         <div class="panel-body">
             <form method="post" class="form">{% csrf_token %}
-            <h2>Are you sure you want to delete subject combination "{{ object }}" info ?</h2>
+            <h2>{% blocktrans with object=object %}Are you sure you want to delete subject combination "{{ object }}" info ?{% endblocktrans %}</h2>
             <input type="submit" value="Confirm" class="btn btn-danger">
             </form>
         </div>

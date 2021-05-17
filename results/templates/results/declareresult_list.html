@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 {% block main_page_title %}
 {{ main_page_title }}
@@ -24,9 +25,9 @@
     <td class="">{{ object.select_student.student_reg }}</td>
     <td class="">{{ object.marks.subject_0_mark }} | {{ object.marks.subject_1_mark }} | {{ object.marks.subject_2_mark }}</td>
     <td>
-        <a href="{% url 'results:update_result' object.id %}" class="btn btn-primary"><i class="fa fa-edit" title="Edit Record"></i>
+        <a href="{% url 'results:update_result' object.id %}" class="btn btn-primary"><i class="fa fa-edit" title="{% trans 'Edit Record' %}"></i>
         </a>
-        <a href="{% url 'results:delete_result' object.id %}" class="btn btn-danger"><i class="fa fa-trash" title="Delete Record"></i>
+        <a href="{% url 'results:delete_result' object.id %}" class="btn btn-danger"><i class="fa fa-trash" title="{% trans 'Delete Record' %}"></i>
         </a>
 
     </td>

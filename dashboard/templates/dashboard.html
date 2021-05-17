@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
-
+{% load i18n %}
 
 {% block main_page_title %}
-    Dashboard
+    {% trans "Dashboard" %}
 {% endblock main_page_title %}
     
 
@@ -12,7 +12,7 @@
             <a class="dashboard-stat bg-primary" href="{% url 'students:student_list' %}">
     
                 <span class="number counter">{{ students }}</span>
-                <span class="name">Regd Studetns</span>
+                <span class="name">{% trans "Regd Students" %}</span>
                 <span class="bg-icon"><i class="fa fa-users"></i></span>
             </a>
             <!-- /.dashboard-stat -->
@@ -22,7 +22,7 @@
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <a class="dashboard-stat bg-danger" href="{% url 'subjects:subject_list' %}">
                 <span class="number counter">{{ subjects }}</span>
-                <span class="name">Subjects Listed</span>
+                <span class="name">{% trans "Subjects Listed" %}</span>
                 <span class="bg-icon"><i class="fa fa-ticket"></i></span>
             </a>
             <!-- /.dashboard-stat -->
@@ -32,7 +32,7 @@
         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <a class="dashboard-stat bg-warning" href="{% url 'student_classes:class_list' %}">
                 <span class="number counter">{{ cls }}</span>
-                <span class="name">Total classes listed</span>
+                <span class="name">{% trans "Total classes listed" %}</span>
                 <span class="bg-icon"><i class="fa fa-bank"></i></span>
             </a>
             <!-- /.dashboard-stat -->
@@ -43,7 +43,7 @@
             <a class="dashboard-stat bg-success" href="{% url 'results:result_list' %}">
     
                 <span class="number counter">{{ results }}</span>
-                <span class="name">Results Declared</span>
+                <span class="name">{% trans "Results Declared" %}</span>
                 <span class="bg-icon"><i class="fa fa-file-text"></i></span>
             </a>
             <!-- /.dashboard-stat -->

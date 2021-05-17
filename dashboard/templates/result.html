@@ -1,30 +1,31 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 
 {% block main_wrapper %}
     <div class="container-fluid" style="background-color:white">
         <div class="row text-center d-block">
-            <h2 class="text-primary bold pb-25"><a href="{% url 'home' %}">Student Result Management System</a></h2>
+            <h2 class="text-primary bold pb-25"><a href="{% url 'home' %}">{% trans "Student Result Management System" %}</a></h2>
         </div>
-        <h4 style="text-align:right"><a href="{% url 'dashboard:pdf' id=object.id %}" target="_blank">Save as PDF</a></h4>
+        <h4 style="text-align:right"><a href="{% url 'dashboard:pdf' id=object.id %}" target="_blank">{% trans "Save as PDF" %}</a></h4>
         <div class="container" id="marksheet">
             <p>
-                <b>Student Name     : </b>  {{ object.select_student.student_name | safe }}
+                <b>{% trans "Student Name" %}     : </b>  {{ object.select_student.student_name | safe }}
             </p>
             <p>
-                <b>Student Class    : </b>  {{ object.select_class.class_name }}   ( <b>{{ object.select_class.section | safe }}</b> )
+                <b>{% trans "Student Class" %}    : </b>  {{ object.select_class.class_name }}   ( <b>{{ object.select_class.section | safe }}</b> )
             </p>
             <p>
-                <b>Student Roll : </b> {{ object.select_student.student_roll | safe }}
+                <b>{% trans "Student Roll" %} : </b> {{ object.select_student.student_roll | safe }}
             </p>
-            <h2 class="text-center text-primary">Mark Sheet</h2>
+            <h2 class="text-center text-primary">{% trans "Mark Sheet" %}</h2>
             
             <table class="table table-hover">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Subject Name</th>
-                        <th scope="col">Mark</th>
+                        <th scope="col">{% trans "Subject Name" %}</th>
+                        <th scope="col">{% trans "Mark" %}</th>
                     </tr>
                 </thead>
                 <tbody id="table-row">
@@ -45,7 +46,7 @@
         </div>
         
         <div class="shadow-lg p-3">
-            <span class="link"><a href="{% url 'home' %}">Back To Home</a></span>
+            <span class="link"><a href="{% url 'home' %}">{% trans "Back To Home" %}</a></span>
         </div>
     </div>   
     

@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 {% include 'snipets/header_static_files.html' %}
 
 <body class="top-navbar-fixed">
@@ -42,7 +42,7 @@
                         <div class="row breadcrumb-div">
                             <div class="col-md-6">
                                 <ul class="breadcrumb">
-                                    <li><a href="{% url 'dashboard:dashboard' %}"><i class="fa fa-home"></i> Home</a></li>
+                                    <li><a href="{% url 'dashboard:dashboard' %}"><i class="fa fa-home"></i> {% trans "Home" %}</a></li>
                                     {% block breadcumb %}
         
                                     {% endblock breadcumb %}

@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-16 22:05-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: models.py:11 views.py:26
+msgid "Subject Name"
+msgstr "Nome da Disciplina"
+
+#: models.py:12 views.py:26
+msgid "Subject Code"
+msgstr "Código da Disciplina"
+
+#: models.py:13
+msgid "Subject Creation Date"
+msgstr "Data de Registro da Disciplina"
+
+#: models.py:14
+msgid "Subject Update Date"
+msgstr "Data de Atualização da Disciplina"
+
+#: models.py:25
+msgid "Select Class"
+msgstr "Selecionar Turma"
+
+#: models.py:26
+msgid "Select Subject"
+msgstr "Selecionar Disciplina"
+
+msgid "Delete Subject"
+msgstr "Excluir Disciplina"
+
+#: models.py:32 views.py:70
+msgid "Section"
+msgstr "Sessão"
+
+#: templates/subjects/subject_delete.html:26
+#: templates/subjects/subjectcombination_delete.html:26
+#, python-format
+msgid ""
+"Are you sure you want to delete subject combination \"%(object)s\" info ?"
+msgstr "Tem certeza que deseja excluir a combinação \"%(object)s\"?"
+
+#: templates/subjects/subject_list.html:26
+#: templates/subjects/subjectcombination_list.html:25
+msgid "Edit Record"
+msgstr "Editar Registro"
+
+#: templates/subjects/subject_list.html:28
+#: templates/subjects/subjectcombination_list.html:27
+msgid "Delete Record"
+msgstr "Excluir Registro"
+
+#: views.py:18
+msgid "Subject Creation"
+msgstr "Nova Disciplina"
+
+#: views.py:19 views.py:31 views.py:51
+msgid "Subjects"
+msgstr "Disciplinas"
+
+#: views.py:20
+msgid "Add Subject"
+msgstr "Nova Disciplina"
+
+#: views.py:26
+msgid "Creation Date"
+msgstr "Data de Registro"
+
+#: views.py:26
+msgid "Last Updated"
+msgstr "Última Atualização"
+
+#: views.py:30
+msgid "Manage Subjects"
+msgstr "Gerenciar Disciplinas"
+
+#: views.py:32
+msgid "View Subjects Info"
+msgstr "Ver Informações de Disciplinas"
+
+#: views.py:50
+msgid "Subject Delete Confirmation"
+msgstr "Confirmar Exclusão de Disciplina"
+
+#: views.py:62
+msgid "SubjectCombination Creation"
+msgstr "Nova Combinação de Disciplinas"
+
+#: views.py:63
+msgid "SubjectConbinations"
+msgstr "Combinação de Disciplinas"
+
+#: views.py:64
+msgid "Create SubjectConbination"
+msgstr "Nova Combinação de Disciplinas"
+
+#: views.py:70
+msgid "Class"
+msgstr "Turma"
+
+#: views.py:70
+msgid "Subject"
+msgstr "Disciplina"
+
+#: views.py:74
+msgid "Manage SubjectCombinations"
+msgstr "Gerenciar Combinação de Disciplinas"
+
+#: views.py:75 views.py:94
+msgid "SubjectCombinations"
+msgstr "Combinação de Disciplinas"
+
+#: views.py:76
+msgid "View SubjectCombinations Info"
+msgstr "Ver Combinação de Disciplinas"
+
+#: views.py:93
+msgid "SubjectCombination Delete Confirmation"
+msgstr "Confirmar Exclusão de Combinação de Disciplinas"
+
+#: views.py:95
+msgid "Delete SubjectCombination"
+msgstr "Excluir Combinação de Disciplinas"

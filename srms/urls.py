@@ -16,6 +16,7 @@ urlpatterns = [
     path('dashboard/', include('dashboard.urls')),
     path('classes/', include('student_classes.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
+    path('i18n/', include('django.conf.urls.i18n')),
 ]
 
 if settings.DEBUG:

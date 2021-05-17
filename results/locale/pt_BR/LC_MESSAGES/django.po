@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-16 20:33-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: forms.py:15 models.py:11
+msgid "Select Class"
+msgstr "Selecionar Turma"
+
+#: forms.py:16 models.py:12
+msgid "Select Student"
+msgstr "Selecionar Aluno"
+
+#: models.py:13
+msgid "Marks"
+msgstr "Notas"
+
+#: models.py:18
+msgid "Section"
+msgstr "Sessão"
+
+#: templates/results/declareresult_form.html:36
+#: templates/results/update_form.html:37
+msgid "Subjects"
+msgstr "Disciplinas"
+
+#: templates/results/declareresult_form.html:41
+#: templates/results/update_form.html:42
+msgid "Save"
+msgstr "Salvar"
+
+#: templates/results/declareresult_form.html:74
+msgid "Enter Mark For"
+msgstr "Digite a nota para"
+
+#: templates/results/declareresult_list.html:28
+msgid "Edit Record"
+msgstr "Editar Registro"
+
+#: templates/results/declareresult_list.html:30
+msgid "Delete Record"
+msgstr "Exluir Registro"
+
+#: templates/results/result_delete.html:26
+#, python-format
+msgid "Are you sure you want to delete result of \"%(student)s\"?"
+msgstr "Tem certeza que deseja exluir o resultado de \"%(student)s\"?"
+
+#: views.py:33
+msgid "you made a request with empty data"
+msgstr "você enviou dados vazios"
+
+#: views.py:51
+msgid "Declare Students Result"
+msgstr "Declarar Resultado de Alunos"
+
+#: views.py:52 views.py:73 views.py:113
+msgid "Results"
+msgstr "Resultados"
+
+#: views.py:53
+msgid "Declare Result"
+msgstr "Declarar Resultado"
+
+#: views.py:72
+msgid "Update Students Result"
+msgstr "Atualizar Resultado de Alunos"
+
+#: views.py:74
+msgid "Update Result"
+msgstr "Atualizar Resultado"
+
+#: views.py:108
+msgid "Student Name"
+msgstr "Nome do Aluno"
+
+#: views.py:108
+msgid "Roll No"
+msgstr "Número de Identificação"
+
+#: views.py:108
+msgid "Class"
+msgstr "Turma"
+
+#: views.py:108
+msgid "Reg Date"
+msgstr "Data de Registro"
+
+#: views.py:108
+msgid "View Result"
+msgstr "Ver Resultado"
+
+#: views.py:112
+msgid "Manage Results"
+msgstr "Gerenciar Resultados"
+
+#: views.py:114
+msgid "View Results Info"
+msgstr "Ver Informação de Resultados"

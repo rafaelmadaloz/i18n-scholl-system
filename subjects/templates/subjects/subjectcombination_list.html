@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load i18n %}
 {% block main_page_title %}
 {{ main_page_title }}
 {% endblock main_page_title %}
@@ -22,9 +22,9 @@
     <td>{{ object.select_class.section }}</td>
     <td>{{ object.select_subject }}</td>
     <td>
-        <a href="{% url 'subjects:subject_combination_update' object.id %}" class="btn btn-primary"><i class="fa fa-edit" title="Edit Record"></i>
+        <a href="{% url 'subjects:subject_combination_update' object.id %}" class="btn btn-primary"><i class="fa fa-edit" title="{% trans 'Edit Record' %}"></i>
         </a>
-        <a href="{% url 'subjects:subject_combination_delete' object.id %}" class="btn btn-danger"><i class="fa fa-trash" title="Delete Record"></i>
+        <a href="{% url 'subjects:subject_combination_delete' object.id %}" class="btn btn-danger"><i class="fa fa-trash" title="{% trans 'Delete Record' %}"></i>
         </a>
 
     </td>

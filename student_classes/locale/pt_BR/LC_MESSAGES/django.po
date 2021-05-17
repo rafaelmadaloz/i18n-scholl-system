@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-05-16 20:34-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: models.py:7
+msgid "Eg- Third, Fouth,Sixth etc"
+msgstr "Ex: Terceito, Quarto, Sexto, etc"
+
+#: models.py:7 views.py:28
+msgid "Class Name"
+msgstr "Nome da Turma"
+
+#: models.py:8
+msgid "Eg- 1,2,4,5 etc"
+msgstr "Ex: 1, 2, 3, 5, etc"
+
+#: models.py:8 views.py:28
+msgid "Class Name In Numeric"
+msgstr "Número da Turma"
+
+#: models.py:9
+msgid "Eg- A,B,C etc"
+msgstr "Ex: A, B, C, etc"
+
+#: models.py:9 models.py:16 views.py:28
+msgid "Section"
+msgstr "Sessão"
+
+#: models.py:10 views.py:28
+msgid "Creation Date"
+msgstr "Data de Criação"
+
+#: templates/student_classes/studentclass_delete.html:26
+#, python-format
+msgid "Are you sure you want to delete class \"%(object)s\" info ?"
+msgstr "Tem certeza que deseja exluir a turma \"%(object)s\"?"
+
+#: templates/student_classes/studentclass_list.html:27
+msgid "Edit Record"
+msgstr "Editar Registro"
+
+#: templates/student_classes/studentclass_list.html:29
+msgid "Delete Record"
+msgstr "Exluir Registro"
+
+#: views.py:19
+msgid "Add Student Class"
+msgstr "Nova Turma de Alunos"
+
+#: views.py:20 views.py:34 views.py:53
+msgid "Classes"
+msgstr "Turmas"
+
+#: views.py:21
+msgid "Add Class"
+msgstr "Nova Turma"
+
+#: views.py:33
+msgid "Manage Classes"
+msgstr "Gerenciar Turmas"
+
+#: views.py:35
+msgid "View Classes Info"
+msgstr "Ver Informações de Turmas"
+
+#: views.py:52
+msgid "Class Delete Confirmation"
+msgstr "Confirmar Exclusão da Turma"
+
+#: views.py:54
+msgid "Delete Class"
+msgstr "Excluir Turma"

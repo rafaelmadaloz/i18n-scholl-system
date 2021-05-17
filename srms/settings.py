@@ -37,6 +37,7 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -56,6 +57,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.i18n',
             ],
         },
     },
@@ -96,6 +98,20 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'templates', 'locale'),
+    #os.path.join(BASE_DIR, 'results', 'locale'),
+    #os.path.join(BASE_DIR, 'student_classes', 'locale'),
+    #os.path.join(BASE_DIR, 'students', 'locale'),
+    #os.path.join(BASE_DIR, 'subjects', 'locale'),
+    os.path.join(BASE_DIR, 'dashboard', 'locale'),
+)
+
+LANGUAGES = (
+    ('en-us', 'English'),
+    ('pt-br', 'Brazilian Portuguese'),
+)
 
 LANGUAGE_CODE = 'en-us'
 

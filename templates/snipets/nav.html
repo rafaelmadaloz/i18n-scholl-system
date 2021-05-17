@@ -1,14 +1,16 @@
+{% load i18n %}
+
 <nav class="navbar top-navbar bg-white box-shadow">
     <div class="container-fluid">
         <div class="row">
             <div class="navbar-header no-padding">
                 <a class="navbar-brand" href="{% url 'dashboard:dashboard' %}">
-                    SRMS | Admin
+                    SRMS | {% trans "Admin" %}
                 </a>
                 <span class="small-nav-handle hidden-sm hidden-xs"><i class="fa fa-outdent"></i></span>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1"
                     aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
+                    <span class="sr-only">{% trans "Toggle navigation" %}</span>
                     <i class="fa fa-ellipsis-v"></i>
                 </button>
                 <button type="button" class="navbar-toggle mobile-nav-toggle">
@@ -33,7 +35,7 @@
 
 
                     <li><a href="{% url 'logout' %}" class="color-danger text-center"><i class="fa fa-sign-out"></i>
-                            Logout</a></li>
+                        {% trans "Logout" %}</a></li>
 
 
 

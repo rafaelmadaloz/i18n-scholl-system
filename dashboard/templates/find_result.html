@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 
 {% block main_wrapper %}
@@ -8,7 +9,7 @@
                 <div class="panel login-box">
                     <div class="panel-heading">
                         <div class="panel-title text-center">
-                            <h4>School Result Management System</h4>
+                            <h4>{% trans "School Result Management System" %}</h4>
                         </div>
                         <div id="query_alert">
                             
@@ -17,14 +18,14 @@
                     <div class="panel-body p-20">
                         <form class="query-form" method="post"> {% csrf_token %}
                             <div class="form-group">
-                                <label for="rollid">Enter your Roll Id</label>
-                                <input type="text" class="form-control" id="rollid" placeholder="Enter Your Roll Id"
+                                <label for="rollid">{% trans "Enter your Roll Id" %}</label>
+                                <input type="text" class="form-control" id="rollid" placeholder="{% trans 'Enter Your Roll Id' %}"
                                     autocomplete="off" name="rollid">
                             </div>
                             <div class="form-group">
-                                <label for="default" class="col-sm-2 control-label">Class</label>
+                                <label for="default" class="col-sm-2 control-label">{% trans "Class" %}</label>
                                 <select name="class" class="form-control" id="default" required="required">
-                                    <option value="">Select Class</option>
+                                    <option value="">{% trans "Select Class" %}</option>
                                     
                                     {% for cls in class %}
                                         <option value="{{ cls.id }}">{{ cls }}</option>
@@ -37,14 +38,14 @@
                             <div class="form-group mt-20">
                                 <div class="">
     
-                                    <button type="submit" class="btn btn-success btn-labeled pull-right">Search<span class="btn-label btn-label-right"><i
+                                    <button type="submit" class="btn btn-success btn-labeled pull-right">{% trans "Search" %}<span class="btn-label btn-label-right"><i
                                                 class="fa fa-check"></i></span></button>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
     
                             <div class="col-sm-6">
-                                <a href="{% url 'home' %}">Back to Home</a>
+                                <a href="{% url 'home' %}">{% trans "Back to Home" %}</a>
                             </div>
                         </form>
     
